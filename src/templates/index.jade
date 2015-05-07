@@ -2,13 +2,15 @@ include _vars
 doctype html
 html(lang="en")
 	head
-		title #{site.site-name}
+		title #{site.siteName}
 		link(rel="stylesheet", href="dist/css/styles.css")
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	body
 		include _header
 		section.content.container
 			include _months
-
+		script(src="node_modules/jquery/dist/jquery.min.js")
+		script(src="src/js/data.js")
+		script(src="src/js/scripts.js")
 
 

@@ -6,3 +6,7 @@ header.container
 				| #{site.siteName}
 			.calender.col-xs-3
 				| #{site.nav}
+				.col-xs-12
+			ul.list-unstyled.hidden
+				each val in ['September','October','November']
+					li= val 
